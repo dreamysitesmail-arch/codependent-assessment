@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <title>Codependency Self-Reflection Assessment</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-background:#f4f6f9;
-margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7fb;
 padding:40px;
 }
 
 .container{
-max-width:900px;
+max-width:850px;
 margin:auto;
 background:white;
 padding:40px;
 border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 h1{
@@ -27,31 +27,27 @@ text-align:center;
 margin-bottom:10px;
 }
 
-.description{
+.subtitle{
 text-align:center;
+color:#666;
 margin-bottom:30px;
-color:#555;
-}
-
-.section{
-margin-top:35px;
 }
 
 .question{
-margin-bottom:20px;
-padding:15px;
+margin-bottom:18px;
+padding-bottom:12px;
 border-bottom:1px solid #eee;
 }
 
 select{
-padding:6px;
-font-size:14px;
+margin-top:6px;
+padding:5px;
 }
 
 button{
-margin-top:30px;
-padding:12px 24px;
-background:#4CAF50;
+margin-top:25px;
+padding:12px 22px;
+background:#3a7bd5;
 color:white;
 border:none;
 border-radius:6px;
@@ -60,21 +56,21 @@ cursor:pointer;
 }
 
 button:hover{
-background:#43a047;
+background:#2f64b0;
 }
 
 .result{
-margin-top:40px;
-padding:25px;
-background:#f1f7ff;
+margin-top:35px;
+padding:20px;
+background:#eef4ff;
 border-radius:8px;
 display:none;
 }
 
 .disclaimer{
-margin-top:40px;
+margin-top:30px;
 font-size:13px;
-color:#666;
+color:#777;
 text-align:center;
 }
 
@@ -88,118 +84,185 @@ text-align:center;
 
 <h1>Codependency Self-Reflection Assessment</h1>
 
-<p class="description">
-Rate how often each statement applies to you.<br>
-1 = Never | 2 = Rarely | 3 = Sometimes | 4 = Often | 5 = Almost Always
+<p class="subtitle">
+Rate each statement from 1-5<br>
+1 = Never | 5 = Almost Always
 </p>
 
-<form id="assessmentForm">
+<form id="assessment">
 
-<div class="section">
-<h2>Self-Worth & Identity</h2>
-
-<div class="question">1. I often feel responsible for other people's emotions or happiness.
-<select name="q1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+1. I often feel responsible for other people's emotions.
+<br>
+<select name="q1">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">2. I struggle to feel good about myself unless others approve of me.
-<select name="q2"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+2. I struggle to say no to people.
+<br>
+<select name="q2">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">3. My self-worth is strongly influenced by how others treat me.
-<select name="q3"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+3. I feel guilty when I set boundaries.
+<br>
+<select name="q3">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">4. I feel anxious when someone I care about is upset with me.
-<select name="q4"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+4. My self-worth depends on how others treat me.
+<br>
+<select name="q4">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">5. I prioritize other people's needs before my own most of the time.
-<select name="q5"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+5. I stay in relationships even when they are unhealthy.
+<br>
+<select name="q5">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
+<div class="question">
+6. I worry people will leave if I set boundaries.
+<br>
+<select name="q6">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-
-<div class="section">
-<h2>Boundaries</h2>
-
-<div class="question">6. I have difficulty saying no to people.
-<select name="q6"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+7. I often try to fix other people's problems.
+<br>
+<select name="q7">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">7. I feel guilty when I set boundaries.
-<select name="q7"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+8. I feel anxious when someone close to me is upset.
+<br>
+<select name="q8">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">8. I allow people to cross my personal limits to avoid conflict.
-<select name="q8"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+9. I often neglect my own needs for others.
+<br>
+<select name="q9">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">9. I often take on responsibilities that aren't really mine.
-<select name="q9"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="question">
+10. I feel incomplete when I am not in a relationship.
+<br>
+<select name="q10">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
 </div>
 
-<div class="question">10. I worry that setting boundaries will cause people to leave me.
-<select name="q10"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
-</div>
-
-</div>
-
-
-<button type="button" onclick="calculateScore()">Calculate My Score</button>
+<button type="button" onclick="calculateScore()">Calculate Result</button>
 
 </form>
 
-<div class="result" id="resultBox">
+<div class="result" id="result">
+
 <h2>Your Result</h2>
-<p id="scoreText"></p>
+
+<p id="score"></p>
+
 <p id="interpretation"></p>
+
 </div>
 
 <p class="disclaimer">
-This assessment is for self-reflection and educational purposes only and is not a clinical diagnosis.
+This assessment is for self-reflection and educational purposes only and is not a medical diagnosis.
 </p>
 
 </div>
-
 
 <script>
 
 function calculateScore(){
 
-let total = 0;
+let total=0;
 
 for(let i=1;i<=10;i++){
 
-let val = document.querySelector('[name="q'+i+'"]').value;
-
-total += parseInt(val);
+total+=parseInt(document.querySelector('[name="q'+i+'"]').value);
 
 }
 
-let interpretation="";
+let message="";
 
-if(total <=20){
-interpretation="Low indicators of codependent patterns.";
+if(total<=20){
+message="Low indicators of codependent patterns.";
 }
-else if(total <=35){
-interpretation="Mild tendencies toward codependent behaviors.";
+else if(total<=35){
+message="Mild tendencies toward codependent behavior.";
 }
-else if(total <=45){
-interpretation="Moderate patterns of codependency.";
+else if(total<=45){
+message="Moderate codependency patterns.";
 }
 else{
-interpretation="Strong indicators of codependent relational patterns.";
+message="Strong indicators of codependent relational patterns.";
 }
 
-document.getElementById("resultBox").style.display="block";
+document.getElementById("result").style.display="block";
 
-document.getElementById("scoreText").innerHTML="Score: "+total;
+document.getElementById("score").innerHTML="Score: "+total;
 
-document.getElementById("interpretation").innerHTML=interpretation;
-
-window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
+document.getElementById("interpretation").innerHTML=message;
 
 }
 
